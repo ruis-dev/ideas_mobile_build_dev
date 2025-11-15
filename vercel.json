@@ -1,8 +1,24 @@
 {
   "rewrites": [
     {
-      "source": "/api/:path*",
+      "source": "/api-v2-hro/:path*",
       "destination": "https://hris.appsradiant.com/api-v2-hro/:path*"
+    },
+    {
+      "source": "/api-hro/:path*",
+      "destination": "https://hris.appsradiant.com/api-hro/:path*"
+    },
+    {
+      "source": "/face/:path*",
+      "destination": "https://fr.neoapi.id/:path*"
+    },
+    {
+      "source": "/api/external-api-configs/:path*",
+      "destination": "https://mps-test.appsradiant.com:8001/api/external-api-configs/:path*"
+    },
+    {
+      "source": "/api/app-version",
+      "destination": "https://api-mps.moyee.co.id/api/app-version"
     },
     {
       "source": "/(.*)",
